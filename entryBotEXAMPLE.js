@@ -5,8 +5,10 @@ var botName;
 var like;
 var user;
 var created;
-console.log("-----------made by ex-----------");
-console.log("---지금부터 봇 가동이 시작됩니다--");
+var ram;
+console.log("——————————◼made by ddoeey123◼——————————");
+console.log("--- 또이봇 이 실행 됩니다 ---");
+console.log("--- !또이봇 게시글로 호출 하세요 ---");
 alert("BOT - 실행됨");
 function comment(a){
   $.ajax({
@@ -49,10 +51,21 @@ setInterval(() => {
 },220);
 function run(){
   //----------------------여기서부터 코드 시작------------------------------------------------------------------
-  botName="기본봇";
-  if(text=="핑"){
-    comment("퐁!");
-  }//예제코드
+  botName="또이봇";
+  
+  if(text=="!또이봇" ||text=="!또이봇 안녕" || text=="!또이봇 ㅎㅇ " || text=="!또이봇 ㅎ2"){
+     ram = Math.floor(1.3);
+    if(ram == 1){
+    comment("왜");
+    }
+     else if(ram == 2){
+    comment("ㅎㅇ");
+    }
+     else if(ram == 1){
+    comment("또이봇 입니다!");
+    }
+  }
+  //예제코드
   //write("제목","내용",free);
   //comment("내용");
   //text 글 제목
