@@ -6,6 +6,9 @@ var like;
 var user;
 var created;
 var ram;
+var admin = new Array("ddoeey123","ddoeeyt","ddoeeybot123");
+var ad;
+
 console.log("——————————◼made by ddoeey123◼——————————");
 console.log("--- 또이봇 이 실행 됩니다 ---");
 console.log("--- !또이봇 게시글로 호출 하세요 ---");
@@ -36,6 +39,9 @@ function write(a,b,c){
     }
   });
 }
+Math.randomInterger = (max,min) => {
+　 floor(Math.random() * (max - min)) + min;
+}
 setInterval(() => {
   $.get('https://playentry.org/api/discuss/find?category=free', d => {
     text=d.data[0].title;
@@ -52,16 +58,15 @@ setInterval(() => {
 function run(){
   //----------------------여기서부터 코드 시작------------------------------------------------------------------
   botName="또이봇";
-  
-  if(text=="!또이봇" ||text=="!또이봇 안녕" || text=="!또이봇 ㅎㅇ " || text=="!또이봇 ㅎ2"){
-     ram = Math.floor(1.3);
-    if(ram == 1){
-    comment("왜");
-    }
+  for(var i = 0;i<admin.length;i++){
+    if (admin[i] == 
+  if(text=="!또이봇" ){
+   comment("왜");
+    
      else if(ram == 2){
     comment("ㅎㅇ");
     }
-     else if(ram == 1){
+     else if(ram == 3){
     comment("또이봇 입니다!");
     }
   }
